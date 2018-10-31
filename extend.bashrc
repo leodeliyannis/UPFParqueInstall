@@ -63,20 +63,20 @@ else
 fi
 unset color_prompt force_color_prompt
 
-    NENHUMA='\[\033[00m\]'
-    BRANCA='\[\033[01;37m\]'
-    VERDE='\[\033[01;32m\]'
-    AZUL='\[\033[01;34m\]'
-    VERMELHO='\[\033[0;31m\]'
-    AMARELO='\[\033[0;33m\]'
-    ROSA='\[\033[02;35m\]'
-    ROSINHA='\[\033[05;35m\]'
-    AGUA='\[\033[00;36m\]'
-    CIANO='\[\033[01;36m\]'
-    CINZA='\[\033[00;37m\]'
-    PS1="${debian_chroot:+($debian_chroot)}\n\
-${AZUL}current directory: ${VERMELHO}\w\n\
-${AGUA}[${CIANO}\t${AGUA}] ${VERDE}\u@\h ${NENHUMA}\$ "
+NENHUMA='\[\033[00m\]'
+BRANCA='\[\033[01;37m\]'
+VERDE='\[\033[01;92m\]'
+AZUL='\[\033[00;94m\]'
+ANIL='\[\033[00;34m\]'
+VERMELHO='\[\033[01;91m\]'
+AMARELO='\[\033[01;93m\]'
+LILAS='\[\033[01;95m\]'
+AGUA='\[\033[00;36m\]'
+CIANO='\[\033[01;96m\]'
+
+PS1="${debian_chroot:+($debian_chroot)}\n\
+${AGUA}[${CIANO}\t${AGUA}]${LILAS} \w\n\
+${AZUL}>>> ${VERDE}\u@\h ${NENHUMA}\$ "
 unset color_prompt force_color_prompt
 
 
